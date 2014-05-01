@@ -1,0 +1,169 @@
+body, html{
+    height:100%;
+    width:100%;
+}
+body{
+    min-width:320px;
+    font-family:'Roboto',sans-serif;
+    /*background:#F4F4F4;*/
+    background:#F5F5F5;
+    padding:0;
+    margin:0;
+    color:#333;
+}
+input{
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+#library, #series{
+    height:100%;
+    padding-top:25px;
+    margin-left:auto;
+    margin-right:auto;
+}
+#uploadMask{
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    position: absolute;
+    left: 0;
+    top: 95px;
+    /*pointer-events:none;*/
+    display:none;
+}
+#menuContainer{
+    height:70px;
+    width:100%;
+}
+#menuButton{
+    width:50px;
+    height:50px;
+    background-image: url('../img/menu.png');
+    cursor: pointer;
+}
+#menu{
+    position:fixed;
+    background-color:#3a3a3a;
+    width:250px;
+    height:100%;
+    margin-left:-250px;
+    color:white;
+}
+#menu ul{
+    padding:0;
+}
+#menu li{
+    list-style: none;
+    margin: 20px 20px 20px 40px;
+}
+#searchContainer{
+    width:100%;
+    padding-top:13px;
+    text-align:center;
+}
+#search{
+    /*background:none;
+    color:black;
+    border:1px #c3c3c3 solid;
+    font-size:20px;*/
+    padding: 13px 13px 11px 13px;
+    border: 1px solid #e7e7e7;/*#c3c3c3*/
+    width: 237px;
+    font-size: 13px;
+}
+.comicCard{
+    background: white;
+    box-shadow: 0 1px 2px #DCDCDC;
+    margin-bottom: 25px;
+    margin-left: 1%;
+    margin-right: 1%;
+    display: inline-block;
+    vertical-align: top;
+}
+.comicCard img{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5%;
+    display: block;
+    height: auto;
+}
+.comicCard p{
+    text-align:center;
+    /*white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;*/
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.comicCard progress{
+    -webkit-appearance: none;
+    appearance: none;
+    width:85%;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    margin-top:12px;
+    background-color:#3a3a3a;
+}
+.comicCard progress::-webkit-progress-bar {
+    background-color:#3a3a3a;
+}
+.comicCard progress::-webkit-progress-value {
+    background-color:#09529C;
+}
+.comicCard progress::-moz-progress-bar {
+    background-color:#3a3a3a;
+}
+.comicCard progress::-moz-progress-value {
+    background-color:#09529C;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+@media (max-width: 799px) { /* Mobile */
+    #menuButton{
+        margin-left: 10px;
+        margin-top: 10px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    #searchContainer{
+        display: inline-block;
+        vertical-align: top;
+        width: calc(100% - 65px);
+    }
+    #library, #series{
+        width: calc(100% - 10px);
+        /*width: 100%;*/
+    }
+
+}
+@media (min-width: 800px) {
+    #menuButton{
+        position:fixed;
+        top:10px;
+        left:10px;
+    }
+    #library, #series{
+        width:70%;
+    }
+}
+@media (max-width: 1199px) {
+    .comicCard{
+        width: 31%;
+    }
+}
+@media (min-width: 1200px) {
+    .comicCard{
+        width: 22.5%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .comicCard{
+        width: 17.5%;
+    }
+}
