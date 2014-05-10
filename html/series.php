@@ -14,9 +14,12 @@ $title = $seriesArray['comic_series']." (".$seriesArray['comic_start_year'].")";
 echo $viewSeries->documentHead($title);
 echo $viewSeries->menu();
 
+echo "<div style='display:none;' id='library'></div>";
 
 echo "<div id='series'>";
 
 echo $viewSeries->getComicSeries($_GET['series']);
 
 echo "</div>";
+
+echo "<div style='display:none;' id='reader'></div>";

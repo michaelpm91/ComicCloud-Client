@@ -1,0 +1,9 @@
+# Enable Rewriting
+RewriteEngine on
+#RewriteBase /
+ 
+# Rewrite user URLs
+#   Input:  s/ID/
+#   Output: series.php?series=ID
+RewriteRule ^s/(\w+)/?$ series.php?series=$1
+RewriteRule ^c/(\w+)/?$ reader.php?id=$1

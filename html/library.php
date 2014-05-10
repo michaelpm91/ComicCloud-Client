@@ -26,3 +26,5 @@ echo "<div id='uploadMask'></div>";
 
 echo $home->getLibrary();
 echo "</div>";
+echo "<div style='display:none;' id='series'></div>";
+echo "<div style='display:none;' id='reader'></div>";

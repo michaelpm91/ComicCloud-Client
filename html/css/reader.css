@@ -1,0 +1,10 @@
+#reader{
+    height:100%;
+}
+.comicPage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: 100%;
+}

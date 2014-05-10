@@ -7,3 +7,4 @@
  */
 require('../resources/config/config.php');
 require('../resources/page.php');
+require('../resources/login.php');
